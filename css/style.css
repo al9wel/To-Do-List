@@ -1,0 +1,241 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    font-family: "Cairo", serif;
+    background-color: #607D8B;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+
+.header{
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    background-color: #616161;
+}
+.header h1{
+    display: inline;
+    color: white;
+}
+.header span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.header span:hover{
+    background-color: #a9c8d8;
+}
+.header span i{
+    font-size: 30px;
+    color: #607D8B;
+}
+.content{
+    background-color: white;
+    padding: 20px;
+}
+.task{
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.task:hover{
+    background-color: #e0e0e0;
+    border: 1px solid #8e8e8e;
+    transform: translateY(-5px);
+}
+.info{
+    /* background-color: red; */
+    width: 60%;
+    text-align: center;
+}
+.info h3{
+    margin-bottom: 0;
+}
+.curd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.curd span{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #919191;
+}
+.curd span:hover{
+    background-color: #a9c8d8;
+}
+.curd .delete{
+    font-size: 25px;
+    color: #ac3c3c;
+}
+.curd .check{
+    font-size: 25px;
+    color: #3d3c3c;
+}
+.curd .update{
+    font-size: 25px;
+    color: #607D8B;
+}
+.color-green{
+    color: #43A047 !important;
+    
+}
+.background-green{
+    background-color: #81C784 !important;
+    color: white;
+}
+.addpage{
+    width: 300px;
+    background-color: #90A4AE;
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+.addpage input{
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    color: #616161;
+    font-size: 20px;
+    padding-right: 5px;
+    font-family: "Cairo", serif;
+}
+.addpage button{
+    margin-top: 22px;
+    outline: none;
+    border: none;
+    width: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #424242;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: "Cairo", serif;
+}
+.addpage button:hover{
+    background-color: #616161;
+}
+.updatepage{
+    width: 300px;
+    background-color: #90A4AE;
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+.updatepage input{
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    color: #616161;
+    font-size: 20px;
+    padding-right: 5px;
+    font-family: "Cairo", serif;
+}
+.updatepage button{
+    margin-top: 22px;
+    outline: none;
+    border: none;
+    width: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #424242;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-family: "Cairo", serif;
+}
+.updatepage button:hover{
+    background-color: #616161;
+}
+.d-n{
+    display: none;
+}
+.sign{
+    text-align: center;
+    color: #ffffff24;
+    letter-spacing: 11px;
+    font-size: 50px;
+    transition: 0.5s;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    font-family: "Cairo", serif;
+}
+@keyframes up {
+    to{
+        transform: translateY(-20px);
+    }
+}
