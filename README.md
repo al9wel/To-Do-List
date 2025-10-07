@@ -5,7 +5,7 @@ This project allows users to add, complete, and delete tasks — all saved in th
 
 ---
 
-![To-Do List Preview](blob:https://imgur.com/78e89d34-5495-4e33-93ad-9b4d56e82974)
+![To-Do List Preview](https://i.imgur.com/H9D4Xyc.png)
 ![Add Task Example](https://i.imgur.com/MbTLE68.png)
 
 ---
